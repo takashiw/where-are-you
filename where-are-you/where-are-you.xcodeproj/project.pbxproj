@@ -13,6 +13,8 @@
 		1676C7B81E1C4266009B0F45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1676C7B71E1C4266009B0F45 /* Assets.xcassets */; };
 		1676C7BB1E1C4266009B0F45 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1676C7B91E1C4266009B0F45 /* LaunchScreen.storyboard */; };
 		1676C7C51E1C43C0009B0F45 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1676C7C41E1C43C0009B0F45 /* LocationViewController.swift */; };
+		16BC92081E1D336700433415 /* SparkSubscriber.m in Sources */ = {isa = PBXBuildFile; fileRef = 16BC92071E1D336700433415 /* SparkSubscriber.m */; };
+		43796DD268813A9B3AEC4A15 /* Pods_where_are_you.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9DA0D37915983D1171DCD77 /* Pods_where_are_you.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,12 @@
 		1676C7BA1E1C4266009B0F45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1676C7BC1E1C4266009B0F45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1676C7C41E1C43C0009B0F45 /* LocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
+		16BC92061E1D336600433415 /* where-are-you-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "where-are-you-Bridging-Header.h"; sourceTree = "<group>"; };
+		16BC92071E1D336700433415 /* SparkSubscriber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SparkSubscriber.m; sourceTree = "<group>"; };
+		16BC92091E1D346D00433415 /* SparkSubscriber.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SparkSubscriber.h; sourceTree = "<group>"; };
+		8775E63CDC1A70A1734944D7 /* Pods-where-are-you.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-where-are-you.debug.xcconfig"; path = "Pods/Target Support Files/Pods-where-are-you/Pods-where-are-you.debug.xcconfig"; sourceTree = "<group>"; };
+		B114A8CDD03FD4465AA5E331 /* Pods-where-are-you.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-where-are-you.release.xcconfig"; path = "Pods/Target Support Files/Pods-where-are-you/Pods-where-are-you.release.xcconfig"; sourceTree = "<group>"; };
+		E9DA0D37915983D1171DCD77 /* Pods_where_are_you.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_where_are_you.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43796DD268813A9B3AEC4A15 /* Pods_where_are_you.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +51,8 @@
 			children = (
 				1676C7AF1E1C4266009B0F45 /* where-are-you */,
 				1676C7AE1E1C4266009B0F45 /* Products */,
+				EB554A6F6955D97AC2EC5DAC /* Pods */,
+				7A99BCF0618ADF20BFF99588 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +74,28 @@
 				1676C7B91E1C4266009B0F45 /* LaunchScreen.storyboard */,
 				1676C7BC1E1C4266009B0F45 /* Info.plist */,
 				1676C7C41E1C43C0009B0F45 /* LocationViewController.swift */,
+				16BC92071E1D336700433415 /* SparkSubscriber.m */,
+				16BC92061E1D336600433415 /* where-are-you-Bridging-Header.h */,
+				16BC92091E1D346D00433415 /* SparkSubscriber.h */,
 			);
 			path = "where-are-you";
+			sourceTree = "<group>";
+		};
+		7A99BCF0618ADF20BFF99588 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E9DA0D37915983D1171DCD77 /* Pods_where_are_you.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EB554A6F6955D97AC2EC5DAC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8775E63CDC1A70A1734944D7 /* Pods-where-are-you.debug.xcconfig */,
+				B114A8CDD03FD4465AA5E331 /* Pods-where-are-you.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +105,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1676C7BF1E1C4266009B0F45 /* Build configuration list for PBXNativeTarget "where-are-you" */;
 			buildPhases = (
+				37721E363656495B75F24D60 /* [CP] Check Pods Manifest.lock */,
 				1676C7A91E1C4265009B0F45 /* Sources */,
 				1676C7AA1E1C4265009B0F45 /* Frameworks */,
 				1676C7AB1E1C4265009B0F45 /* Resources */,
+				4A4CD86D8A576AE30D6244DC /* [CP] Embed Pods Frameworks */,
+				BE164D331A82C801D5E95EAA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -100,6 +134,7 @@
 					1676C7AC1E1C4265009B0F45 = {
 						CreatedOnToolsVersion = 8.2;
 						DevelopmentTeam = 4XRLFC3F88;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -135,12 +170,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		37721E363656495B75F24D60 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4A4CD86D8A576AE30D6244DC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-where-are-you/Pods-where-are-you-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE164D331A82C801D5E95EAA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-where-are-you/Pods-where-are-you-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1676C7A91E1C4265009B0F45 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				1676C7B31E1C4266009B0F45 /* ViewController.swift in Sources */,
+				16BC92081E1D336700433415 /* SparkSubscriber.m in Sources */,
 				1676C7B11E1C4266009B0F45 /* AppDelegate.swift in Sources */,
 				1676C7C51E1C43C0009B0F45 /* LocationViewController.swift in Sources */,
 			);
@@ -263,26 +347,33 @@
 		};
 		1676C7C01E1C4266009B0F45 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8775E63CDC1A70A1734944D7 /* Pods-where-are-you.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 4XRLFC3F88;
 				INFOPLIST_FILE = "where-are-you/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.takashiw.where-are-you";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "where-are-you/where-are-you-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		1676C7C11E1C4266009B0F45 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B114A8CDD03FD4465AA5E331 /* Pods-where-are-you.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 4XRLFC3F88;
 				INFOPLIST_FILE = "where-are-you/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.takashiw.where-are-you";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "where-are-you/where-are-you-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -306,6 +397,7 @@
 				1676C7C11E1C4266009B0F45 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
